@@ -14,7 +14,7 @@ export default function Contact() {
     // Contact form sends to backend /api/auth... or a dedicated contact route
     // For now simulate success
     await new Promise(r => setTimeout(r, 800))
-    toast.success('Message sent! We'll reply within 24 hours.')
+    toast.success('Message sent! We will reply within 24 hours.')
     setForm({ name: '', email: '', subject: '', message: '' })
     setLoading(false)
   }
